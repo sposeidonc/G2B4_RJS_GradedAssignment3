@@ -1,0 +1,144 @@
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Movie Listing Page */
+  .movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    margin: 30px;
+  }
+
+  .card{
+    width:18rem;
+  }
+  .card-img{
+    max-width: 18rem;
+    max-height: 25rem;
+  }
+  
+  .poster {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    min-height: 200px;
+  }
+  
+  .rating-favorites {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .rating {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .favorite-button {
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .favorite {
+    color: red;
+  }
+  
+  /* Movie Details */
+  .movie-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh; 
+    margin-top: 5vh;
+  }
+  
+  .movie-details {
+    position: relative; 
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movie-details-title {
+    font-size: 50px;
+    font-weight: bold;    
+    margin-bottom: 10px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    text-transform: uppercase;
+  }
+    
+  .label {
+    font-weight: bold;
+  }
+  
+  .span {
+    margin-left: 5px;
+  }
+  
+  .movie-details-storyline {
+    font-style: italic;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  .movie-details-storyline label {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-weight: bold;
+  }
+  
+  .search-bar {
+    margin-top: 7vh;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .search-bar input:focus {
+    outline: none;
+    border-color: #66afe9;
+    box-shadow: 0 0 5px #66afe9;
+  }
+  
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .close-icon:hover {
+    background-color: gray;
+    color: white;
+  }
+  
